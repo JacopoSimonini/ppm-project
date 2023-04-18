@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Progetto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd2ba3f426.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+  <nav>
+      <input type="checkbox" id="check" onclick="tooglee()">
+      <label for="check" class="checkbtn">
+         <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">The Tennesean</label>
+      <ul class="nav_ul">
+          <li><a href="#">Home</a> </li>
+          <li><a href="#">News</a> </li>
+          <li><a href="#">Sports</a> </li>
+          <li><a href="#">Counties</a> </li>
+          <li><a class="business" href="#">Business</a> </li>
+          <li><a class="music" href="#">Music</a> </li>
+          <li><a class="opinion" href="#">Opinion</a> </li>
+          <li><a class="things" href="#">Things to do</a> </li>
+          <li><a class="life" href="#">Life</a> </li>
+          <li><a class="obituaries" href="#">Obituaries</a> </li>
+          <li><a class="newspaper" href="#">eNewspaper</a> </li>
+      </ul>
+
+  </nav>
+  <div class="menu_2" id="menu_2">
+<!--filtro per blurrare-->
+  </div>
+
+
+  <div class="menu" id="menu">
+
+      <label class="logo_2">The Tennesean
+      <input type="button" id="close" onclick="chiusura()">
+      <span for="close" class="closebtn">
+          <i class="fa-solid fa-x"></i>
+      </span>
+      </label>
+      <div class="searching">
+        <div class="search-box">
+            <input class="search-txt" type="text" placeholder="  What do you want to find?">
+            <input type="button" class="input_search">
+
+        </div>
+          <span for="close" class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+
+      </div>
+      <ul>
+          <li class="new-lateral droplist"><a href="#">News</a>
+              <span class="cubo-new"></span>
+          <span class="frec-1" onclick="menu_n()" >
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+              <ul class="window-hover">
+                  <li><a href="#">News 1</a> </li>
+                  <li><a href="#">News 2</a> </li>
+                  <li><a href="#">News 3</a> </li>
+                  <li><a href="#">News 4</a> </li>
+                  <li><a href="#">News 5</a> </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="phone-new" class="phone-menu">
+                  <li><a href="#">News 1</a> </li>
+                  <li><a href="#">News 2</a> </li>
+                  <li><a href="#">News 3</a> </li>
+                  <li><a href="#">News 4</a> </li>
+                  <li><a href="#">News 5</a> </li>
+              </ul>
+          </li>
+          <li class="sport-lateral droplist"><a href="#">Sports</a>
+              <span class="cubo-sport"></span>
+              <span class="frec-1" onclick="menu_s()" >
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+              <ul class="window-hover">
+                  <li><a href="#">Sport 1</a> </li>
+                  <li><a href="#">Sport 2</a> </li>
+                  <li><a href="#">Sport 3</a> </li>
+                  <li><a href="#">Sport 4</a> </li>
+                  <li><a href="#">Sport 5</a> </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="sport-phone" class="phone-menu">
+                  <li><a href="#">Sport 1</a> </li>
+                  <li><a href="#">Sport 2</a> </li>
+                  <li><a href="#">Sport 3</a> </li>
+                  <li><a href="#">Sport 4</a> </li>
+                  <li><a href="#">Sport 5</a> </li>
+              </ul>
+          </li>
+          <li class="counties-lateral droplist"><a href="#">Counties</a>
+              <span class="cubo-counties"></span>
+              <span class="frec-1" onclick="menu_c()">
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+              <ul class="window-hover">
+                  <li><a href="#">Counties 1</a> </li>
+                  <li><a href="#">Counties 2</a> </li>
+                  <li><a href="#">Counties 3</a> </li>
+                  <li><a href="#">Counties 4</a> </li>
+                  <li><a href="#">Counties 5</a> </li>
+                  <li><a href="#">Counties 6</a> </li>
+                  <li><a href="#">Counties 7</a> </li>
+              </ul>
+          </li>
+          <li>
+              <ul id="counties-phone" class="phone-menu">
+                  <li><a href="#">Counties 1</a> </li>
+                  <li><a href="#">Counties 2</a> </li>
+                  <li><a href="#">Counties 3</a> </li>
+                  <li><a href="#">Counties 4</a> </li>
+                  <li><a href="#">Counties 5</a> </li>
+                  <li><a href="#">Counties 6</a> </li>
+                  <li><a href="#">Counties 7</a> </li>
+              </ul>
+          </li>
+          <li class="droplist"><a href="#">Business </a>
+              <span class="frec-1">
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </li>
+          <li class="droplist"><a href="#">Music</a>
+              <span class="frec-1">
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </li>
+          <li class="droplist"><a href="#">Opinion</a>
+              <span class="frec-1">
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </li>
+
+          <li class="droplist"><a href="#">Things to do</a>
+              <span class="frec-1">
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </li>
+          <li class="droplist"><a href="#">Life</a>
+              <span class="frec-1" >
+              <i class="fa-solid fa-chevron-right"></i>
+          </span>
+          </li>
+          <li class="droplist"><a href="#" class="no-frec">Obituaries</a> </li>
+          <li class="droplist"><a href="#" class="no-frec">eNewspaper</a> </li>
+
+      </ul>
+
+  </div>
+
+  <!-- inizio main page-->
+<section id="main">
+
+    <div class="div-container">
+        <a href="#" class="articolo-1">
+            <img src="https://via.placeholder.com/420x240/a9e7fc/4a4a4a?text=articolo-1" alt="main article">
+            <div class="para-1">
+                <h1 class="main-h">Poll: Most call Tennessee expulsion for gun protests 'anti-democratic'</h1>
+                <p>In the wake of school shootings like that at Nashville Covenant,
+                    two-thirds in a USA TODAY/Ipsos Poll say state legislatures should toughen gun laws.</p>
+            </div>
+        </a>
+
+        <div class="articolo-2">
+            <a href="#" class="articolo-2-container">
+                <img src="https://via.placeholder.com/260x150/a9e7fc/4a4a4a?text=articolo-2" alt="second article">
+                <div class="titolo-articolo-2">
+                    <h3>Six things to know about the Nashville Yards development</h3>
+                </div>
+            </a>
+            <a href="#" class="articolo-2-container">
+                <img src="https://via.placeholder.com/260x150/a9e7fc/4a4a4a?text=articolo-2" alt="second article">
+                <div class="titolo-articolo-2">
+                    <h3>Six things to know about the Nashville Yards development</h3>
+                </div>
+            </a>
+        </div>
+
+        <div class="articolo-3">
+            <ul>
+                <li>
+                    <a href="#" class="news-title">
+                        <h3 class="main-h">'Shucked': Two Nashville songwriters could have a hit Broadway musical</h3>
+                        <p><span class="type">Music</span> | 8 hours ago </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="news-title">
+                        <h3 class="main-h">Readers say they're canceling, boycotting Tennessee over reps' expulsion</h3>
+                        <p><span class="type">Letters</span> | 8 hours ago </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="news-title">
+                        <h3 class="main-h">Here's how Vanderbilt baseball can win the SEC East</h3>
+                        <p><span class="type">Vanderbilt</span> | 8 hours ago </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="news-title">
+                        <h3 class="main-h">12 targets for Tennessee Titans on Day 2 of 2023 NFL Draft</h3>
+                        <p><span class="type">News</span> | 8 hours ago </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+ <!-- seconda sezione-->
+  <section id="articles">
+      <div class="div-container">
+
+          <div class="lato-sx">
+              <div class="ad">
+                 <a href="#">
+                     <h3> Share your feedback <p>to help improve our site!</p> </h3>
+                 </a>
+                  <img src="https://via.placeholder.com/400x1000/ffffff/ffffff?text=+" alt="advertisement">
+              </div>
+              <div class="more-stories-container">
+                  <div class="titolo">
+                      <div class="rettangolo"></div>
+                      <h2>More Stories</h2>
+                  </div>
+                  <div class="more-stories">
+                      <a href="#" class="articolo">
+                          <div class="news-title">
+                              <h3 class="main-h">Mukbang hella wolf succulents marfa readymade shabby chic +1 mustache.</h3>
+                              <p><span class="type">Money</span> | 4 hours ago </p>
+                          </div>
+                          <img src="https://via.placeholder.com/90x90/a9e7fc/4a4a4a?text=news" alt="articolo">
+                      </a>
+                      <a href="#" class="articolo">
+                          <div class="news-title">
+                              <h3 class="main-h">Mukbang hella wolf succulents marfa readymade shabby chic +1 mustache.</h3>
+                              <p><span class="type">Money</span> | 4 hours ago </p>
+                          </div>
+                          <img src="https://via.placeholder.com/90x90/a9e7fc/4a4a4a?text=news" alt="articolo">
+                      </a>
+                      <a href="#" class="articolo">
+                          <div class="news-title">
+                              <h3 class="main-h">Mukbang hella wolf succulents marfa readymade shabby chic +1 mustache.</h3>
+                              <p><span class="type">Money</span> | 4 hours ago </p>
+                          </div>
+                          <img src="https://via.placeholder.com/90x90/a9e7fc/4a4a4a?text=news" alt="articolo">
+                      </a>
+                      <a href="#" class="articolo">
+                          <div class="news-title">
+                              <h3 class="main-h">Mukbang hella wolf succulents marfa readymade shabby chic +1 mustache.</h3>
+                              <p><span class="type">Money</span> | 4 hours ago </p>
+                          </div>
+                          <img src="https://via.placeholder.com/90x90/a9e7fc/4a4a4a?text=news" alt="articolo">
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+          <div class="lato-dx">
+              <div class="container-dx">
+                  <a href="#" class="articolo">
+                      <div class="news-title">
+                          <h3 class="main-h"> Copper mug marxism migas, marxism migas, raw denim.</h3>
+                          <p><span class="type">Health</span> | 3 hours ago </p>
+                      </div>
+                      <img src="https://via.placeholder.com/190x100/a9e7fc/4a4a4a?text=news" alt="articolo">
+                  </a>
+
+                  <a href="#" class="articolo">
+                      <div class="news-title">
+                          <h3 class="main-h"> Copper mug marxism migas, marxism migas, raw denim.</h3>
+                          <p><span class="type">Health</span> | 3 hours ago </p>
+                      </div>
+                      <img src="https://via.placeholder.com/190x100/a9e7fc/4a4a4a?text=news" alt="articolo">
+                  </a>
+
+                  <a href="#" class="articolo">
+                      <div class="news-title">
+                          <h3 class="main-h">Copper mug marxism migas, marxism migas, raw denim.</h3>
+                          <p><span class="type">Health</span> | 3 hours ago </p>
+                      </div>
+                      <img src="https://via.placeholder.com/190x100/a9e7fc/4a4a4a?text=news" alt="articolo">
+                  </a>
+
+                  <a href="#" class="articolo">
+                      <div class="news-title">
+                          <h3 class="main-h">Copper mug marxism migas, marxism migas, raw denim.</h3>
+                          <p><span class="type">Health</span> | 3 hours ago </p>
+                      </div>
+                      <img src="https://via.placeholder.com/190x100/a9e7fc/4a4a4a?text=news" alt="articolo">
+                  </a>
+
+                  <a href="#" class="articolo">
+                      <div class="news-title">
+                          <h3 class="main-h">Copper mug marxism migas, marxism migas, raw denim.</h3>
+                          <p><span class="type">Health</span> | 3 hours ago </p>
+                      </div>
+                      <img src="https://via.placeholder.com/190x100/a9e7fc/4a4a4a?text=news" alt="articolo">
+                  </a>
+
+                  <a href="#" class="articolo">
+                      <div class="news-title">
+                          <h3 class="main-h">Copper mug marxism migas, marxism migas, raw denim.</h3>
+                          <p><span class="type">Health</span> | 3 hours ago </p>
+                      </div>
+                      <img src="https://via.placeholder.com/190x100/a9e7fc/4a4a4a?text=news" alt="articolo">
+                  </a>
+              </div>
+
+              <div class="most-recents-container">
+                  <div class="titolo">
+                      <div class="rettangolo"></div>
+                      <h2>Most Recent Videos</h2>
+                      <a href="#" class="more-right"><i class="fas fa-chevron-right"></i></a>
+                  </div>
+                  <div class="most-recents">
+                      <a href="#" class="main-recent">
+                          <img src="https://via.placeholder.com/470x270/a9e7fc/4a4a4a?text=Most+Recent+Videos" alt="main video">
+                          <div class="news-title">
+                              <h3 class="main-h"> Lomo glossier jean shorts, food truck lo-fi sriracha raclette banh mi VHS Brooklyn.</h3>
+                              <p><span class="type">History</span> | 1 hours ago </p>
+                              <span class="btn main-btn"><i class="fas fa-play"></i><span class="duration">Play | 0:20</span></span>
+                          </div>
+                      </a>
+                      <div class="recent-2">
+                          <a href="#" class="recent">
+                              <img src="https://via.placeholder.com/220x125/a9e7fc/4a4a4a?text=news" alt="video">
+                              <span class="btn"><i class="fas fa-play"></i></span>
+                              <div class="news-title">
+                                  <h3 class="main-h">Lomo glossier jean shorts, food truck lo-fi sriracha raclette banh mi VHS Brooklyn.</h3>
+                              </div>
+                          </a>
+
+                          <a href="#" class="recent">
+                              <img src="https://via.placeholder.com/220x125/a9e7fc/4a4a4a?text=news" alt="video">
+                              <span class="btn"><i class="fas fa-play"></i></span>
+                              <div class="news-title">
+                                  <h3 class="main-h">Lomo glossier jean shorts, food truck lo-fi sriracha raclette banh mi VHS Brooklyn.</h3>
+                              </div>
+                          </a>
+
+                          <a href="#" class="recent">
+                              <img src="https://via.placeholder.com/220x125/a9e7fc/4a4a4a?text=news" alt="video">
+                              <span class="btn"><i class="fas fa-play"></i></span>
+                              <div class="news-title">
+                                  <h3 class="main-h">Lomo glossier jean shorts, food truck lo-fi sriracha raclette banh mi VHS Brooklyn.</h3>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="show-more">
+                          <a href="#">Show more <span>Most Recent Videos <i class="fas fa-chevron-down"></i></span></a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="most-recents-container">
+                  <div class="titolo">
+                      <div class="rettangolo"></div>
+                      <h2>Most Recent Galleries</h2>
+                      <a href="#" class="more-right"><i class="fas fa-chevron-right"></i></a>
+                  </div>
+                  <div class="most-recents">
+                      <a href="#" class="main-recent">
+                          <img src="https://via.placeholder.com/470x270/a9e7fc/4a4a4a?text=Most+Recent+Galleries" alt="main gallery">
+                          <div class="news-title">
+                              <h3 class="main-h">Fashion axe aesthetic neutra sriracha direct trade bread.</h3>
+                              <p><span class="type">History</span> | 1 hours ago </p>
+                              <span class="btn main-btn"><i class="fas fa-camera"></i><span class="duration">View Gallery</span></span>
+                          </div>
+                      </a>
+                      <div class="recent-2">
+                          <a href="#" class="recent">
+                              <img src="https://via.placeholder.com/220x125/a9e7fc/4a4a4a?text=news" alt="gallery">
+                              <span class="btn"><i class="fas fa-camera"></i></span>
+                              <div class="news-title">
+                                  <h3 class="main-h">Fashion axe aesthetic neutra sriracha direct trade bread.</h3>
+                              </div>
+                          </a>
+
+                          <a href="#" class="recent">
+                              <img src="https://via.placeholder.com/220x125/a9e7fc/4a4a4a?text=news" alt="gallery">
+                              <span class="btn"><i class="fas fa-camera"></i></span>
+                              <div class="news-title">
+                                  <h3 class="main-h">Fashion axe aesthetic neutra sriracha direct trade bread.</h3>
+                              </div>
+                          </a>
+
+                          <a href="#" class="recent">
+                              <img src="https://via.placeholder.com/220x125/a9e7fc/4a4a4a?text=news" alt="gallery">
+                              <span class="btn"><i class="fas fa-camera"></i></span>
+                              <div class="news-title">
+                                  <h3 class="main-h">Fashion axe aesthetic neutra sriracha direct trade bread.</h3>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="show-more">
+                          <a href="#">Show more <span>Most Recent Galleries <i class="fas fa-chevron-down"></i></span></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!--footer-->
+
+  <footer>
+      <ul class="footer-links">
+          <li><a href="#">Help</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Terms of Service</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Subscription Terms & Conditions</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Your California Privacy Rights/Privacy Policy</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Site Map</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Accessibility</a></li>
+          <li>
+              <div class="dot"></div>
+          </li>
+          <li><a href="#">Our Ethical Principles</a></li><li>
+          <div class="dot"></div>
+      </li>
+          <li><a href="#">Manage Cookies</a></li>
+      </ul>
+
+      <ul class="social-links">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+      </ul>
+
+      <p>© Copyright Gannett 2023</p>
+
+  </footer>
+
+ </body>
+ </html>
