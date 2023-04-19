@@ -258,6 +258,9 @@ nav a:hover{
         left: 87.5%!important;
 
     }
+    .articolo img{
+        margin-left: 10px;
+    }
 }
 /*codice per menu laterale*/
 .menu_2{
