@@ -265,7 +265,9 @@ nav a:hover{
     }
     .frec-1{
         left: 87.5%!important;
-
+    }
+    .news-phone{
+        transform: scale(0.7) !important;
     }
 }
 /*codice per menu laterale*/
@@ -633,9 +635,6 @@ img {
 .type {
     font-weight: bold;
     color: #4A4A4A;
-}
-img {
-    max-width: 100%;
 }
 .lato-dx {
     padding: 0 10px;
