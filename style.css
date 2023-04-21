@@ -212,6 +212,15 @@ nav a:hover{
     .footer-links{
         flex-wrap: wrap !important;
     }
+    .news-pc{
+        display: none !important;
+    }
+    .news-phone{
+        display: initial !important;
+    }
+    .articolo img{
+        margin-left: 10px;
+    }
 }
 @media (max-width: 700px) {
     .business{
@@ -257,9 +266,6 @@ nav a:hover{
     .frec-1{
         left: 87.5%!important;
 
-    }
-    .articolo img{
-        margin-left: 10px;
     }
 }
 /*codice per menu laterale*/
@@ -638,6 +644,12 @@ img {
     background-color: white;
     height: 1519px;
     padding: 20px 50px;
+}
+.news-pc{
+    display: initial;
+}
+.news-phone{
+    display: none;
 }
 .titolo .more-right {
     float: right;
